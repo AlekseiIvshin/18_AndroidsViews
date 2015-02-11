@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ViewApplication</string>
+    <string name="hello_world">Простое текстовое поле</string>
+    <string name="action_settings">Настройки</string>
+    <string name="button_text">Кнопка</string>
+    <string name="radio_button_text_1">Селектор номер 1</string>
+    <string name="radio_button_text_2">Селектор номер 2</string>
+    <string name="checkbox_text">Флажок</string>
+    <string name="toggle_text">Переключатель</string>
+    <string name="edit_text_hint">Введите любой текст</string>
+</resources>
