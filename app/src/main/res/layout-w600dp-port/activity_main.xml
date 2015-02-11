@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".MainActivity"
-    style="@style/AppTheme">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -29,14 +25,14 @@
             android:layout_toLeftOf="@+id/button"
             android:hint="@string/edit_text_hint" />
 
-        <Button
+        <ImageButton
             android:id="@id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_below="@id/text_view"
-            android:text="@string/button_text"
-            android:textColor="@color/button_text"/>
+            android:src="@drawable/ic_add_circle_black_48dp"
+            style="?android:attr/borderlessButtonStyle"/>
 
         <Spinner
             android:id="@+id/spinner"
@@ -81,7 +77,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/view_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
                 android:text="@string/radio_button_text_1" />
 
             <RadioButton
@@ -90,4 +86,4 @@
                 android:text="@string/radio_button_text_2" />
         </RadioGroup>
     </RelativeLayout>
-</ScrollView>
+</RelativeLayout>

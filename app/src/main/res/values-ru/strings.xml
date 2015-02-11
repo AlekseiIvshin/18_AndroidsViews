@@ -9,4 +9,8 @@
     <string name="checkbox_text">Флажок</string>
     <string name="toggle_text">Переключатель</string>
     <string name="edit_text_hint">Введите любой текст</string>
+    <string name="any_action_title">Некоторое действие</string>
+    <string name="group_item1">Пункт меню 1</string>
+    <string name="group_item2">Пункт меню 2</string>
+    <string name="group_item3">Пункт меню 3</string>
 </resources>

@@ -10,5 +10,8 @@
     <string name="checkbox_text">Check box</string>
     <string name="toggle_text">Toggle box</string>
     <string name="edit_text_hint">Enter any text</string>
-
+    <string name="any_action_title">Any action</string>
+    <string name="group_item1">Menu item 1</string>
+    <string name="group_item2">Menu item 2</string>
+    <string name="group_item3">Menu item 3</string>
 </resources>

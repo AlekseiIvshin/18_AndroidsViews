@@ -3,4 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_any" android:title="@string/any_action_title"
+        android:orderInCategory="101" app:showAsAction="ifRoom"/>
+    <group android:id="@+id/menu_group">
+        <item android:id="@+id/group_item1" app:showAsAction="ifRoom" android:orderInCategory="102"
+            android:title="@string/group_item1"/>
+        <item android:id="@+id/group_item2" app:showAsAction="ifRoom" android:orderInCategory="103"
+            android:title="@string/group_item2"/>
+        <item android:id="@+id/group_item3" app:showAsAction="ifRoom" android:orderInCategory="104"
+            android:title="@string/group_item3"/>
+    </group>
 </menu>
