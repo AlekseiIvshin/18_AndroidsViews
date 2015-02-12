@@ -6,27 +6,19 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         style="@style/AppTheme"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
         tools:context=".MainActivity"
         tools:locale="ru">
 
         <TextView
-            android:id="@+id/text_view"
+            android:id="@id/textView"
             style="@style/AppTheme.TextView"
-            android:elevation="4dp"
             android:text="@string/hello_world" />
 
         <EditText
-            android:id="@+id/edit_text_view"
+            android:id="@id/editTextView"
             style="@style/AppTheme.EditText"
             android:layout_width="match_parent"
-            android:elevation="4dp"
             android:hint="@string/edit_text_hint" />
 
         <Button
@@ -36,63 +28,50 @@
             android:textColor="@color/button_text" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@id/spinner"
             style="@style/AppTheme.Spinner"
             android:entries="@array/spinnerItems" />
 
         <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@id/checkBox"
+            style="@style/AppTheme.CheckBox"
             android:text="@string/checkbox_text" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <android.support.v7.widget.SwitchCompat
+            android:id="@id/toggleButton"
+            style="@style/AppTheme.Switch"
             android:text="@string/toggle_text" />
 
         <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:id="@id/seekBar"
+            style="@style/AppTheme.SeekBar" />
 
         <RadioGroup
-            android:id="@+id/radiobutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:id="@id/radioButton"
+            style="@style/AppTheme.RadioGroup">
 
             <RadioButton
-                android:id="@+id/radio_button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@id/radioButton1"
+                style="@style/AppTheme.RadioItem"
                 android:text="@string/radio_button_text_1" />
 
             <RadioButton
-                android:id="@+id/radio_button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@id/radioButton2"
+                style="@style/AppTheme.RadioItem"
                 android:text="@string/radio_button_text_2" />
         </RadioGroup>
 
 
         <android.support.v7.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/card_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:elevation="4dp">
+            android:id="@id/cardView"
+            style="@style/AppTheme.CardView">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/AppTheme.CardView.InnerLayout">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="1dp"
+                    style="@style/AppTheme.CardView.Image"
                     android:src="@drawable/card_image" />
 
                 <TextView

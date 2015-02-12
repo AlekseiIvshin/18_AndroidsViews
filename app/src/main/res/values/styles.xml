@@ -1,19 +1,18 @@
 <resources>
+
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light">
         <item name="android:textColor">@color/text_color</item>
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="android:actionMenuTextColor">@color/primary_dark</item>
-
         <item name="actionBarStyle">@style/MyActionBar</item>
         <item name="actionMenuTextColor">@color/accent</item>
     </style>
 
-    <style name="MyActionBar"
-        parent="@style/Widget.AppCompat.ActionBar">
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
         <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
         <item name="android:background">@drawable/ab_solid</item>
-        <!-- Support library compatibility -->
+
         <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
         <item name="background">@drawable/ab_solid</item>
 
@@ -23,14 +22,14 @@
         <item name="android:textColor">@color/accent</item>
     </style>
 
-    <style name="AppTheme.TextView" parent="AppTheme">
+    <style name="AppTheme.TextView" parent="Widget.AppCompat.AutoCompleteTextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">@dimen/default_padding</item>
         <item name="android:background">@drawable/view_rect</item>
     </style>
 
-    <style name="AppTheme.EditText" parent="AppTheme">
+    <style name="AppTheme.EditText" parent="Widget.AppCompat.EditText">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">@dimen/default_padding</item>
@@ -39,21 +38,59 @@
     </style>
 
     <style name="AppTheme.Button" parent="android:Widget.Holo.Button.Borderless">
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">@dimen/default_padding</item>
         <item name="android:paddingRight">@dimen/default_padding</item>
     </style>
 
-    <style name="AppTheme.Spinner" parent="android:Widget.Holo.Light.Spinner">
+
+    <style name="AppTheme.Spinner" parent="Widget.AppCompat.Spinner">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:spinnerItemStyle">@style/AppTheme.Spinner.Item</item>
     </style>
 
+    <style name="AppTheme.CheckBox" parent="Theme.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 
-    <style name="AppTheme.Spinner.Item" parent="android:Widget.Holo.Light.TextView.SpinnerItem">
-        <item name="android:background">@drawable/view_rect</item>
+    <style name="AppTheme.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.SeekBar" parent="Theme.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.RadioGroup" parent="Theme.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.RadioItem" parent="Theme.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.CardView" parent="Theme.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:padding">@dimen/default_padding</item>
+    </style>
+
+    <style name="AppTheme.CardView.InnerLayout" parent="Theme.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AppTheme.CardView.Image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 </resources>
